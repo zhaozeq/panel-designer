@@ -1,0 +1,29 @@
+@import '../../../../themes/default.less';
+.drawer {
+  position: absolute;
+}
+.list_wrap {
+  color: @text-color;
+  overflow: hidden scroll;
+  .comp {
+    margin-top: 15px;
+    margin-right: 15px;
+    float: left;
+    .content {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      width: 132px;
+      height: 100px;
+      align-items: center;
+      background: #fff;
+      pointer-events: none;
+      border-radius: 6px;
+      transition: @transition;
+    }
+    .name {
+      padding-top: 2px;
+      text-align: center;
+    }
+  }
+}

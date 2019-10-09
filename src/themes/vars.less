@@ -1,0 +1,40 @@
+@import './default';
+
+/* antd */
+// drawer
+:global(.ant-drawer-header) {
+  background: #3b3b3b !important;
+  border-bottom: 1px solid @slide-color !important;
+  div {
+    text-align: center;
+  }
+  div,
+  button {
+    color: rgba(255, 255, 255, 0.65) !important;
+  }
+}
+:global(.ant-drawer-content) {
+  background: #333 !important;
+  :global(.ant-drawer-body) {
+    padding: 0 !important;
+    height: calc(100% - 55px);
+  }
+}
+
+// tabs
+:global(.ant-tabs-bar.ant-tabs-left-bar) {
+  background: #303030;
+  color: @text-color;
+  border-right: 1px solid @slide-color !important;
+  :global(.ant-tabs-tab-active) {
+    color: #fff !important;
+  }
+  :global(.ant-tabs-tab:hover) {
+    color: #fff !important;
+  }
+}
+:global(.ant-tabs-content) {
+  height: 100% !important;
+  overflow: hidden scroll !important;
+  border-left: none !important;
+}
